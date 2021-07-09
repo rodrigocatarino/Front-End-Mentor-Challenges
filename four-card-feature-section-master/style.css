@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,400&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+}
+
+
+.container {
+    padding: 50px 30px;
+}
+
+/* HEADER */
+.header {
+    margin: 40px auto 70px auto;
+    max-width: 500px;
+    text-align: center; 
+}
+
+h1.title {
+    color: var(--very-dark-blue);
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h1.powered {
+    color: var(--very-dark-blue);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.header p {
+    margin-top: 15px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1220px;
+}
+
+.hero p {
+    font-size: 14px;
+}
+
+/* SUPERVISOR SECTION */
+.hero-supervisor {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: left;
+    border-radius: 10px;
+    border-top: 5px solid;
+    border-top-color: var(--cyan);
+    box-shadow: 1px 2px 20px var(--grayish-blue);
+    margin: 15px;
+    width: 315px;
+    height: 238px;
+    color: var(--very-dark-blue);
+    font-weight: 400;
+    order: 1;    
+}
+
+.supervisor-img {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.hero-supervisor p {
+    margin-top: 5px;
+}
+
+/* TEAM BUILDER SECTION */
+.hero-team-builder {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: left;
+    border-radius: 10px;
+    border-top: 5px solid;
+    border-top-color: var(--red);
+    box-shadow: 1px 2px 20px var(--grayish-blue);
+    margin: 15px;
+    width: 315px;
+    height: 238px;
+    color: var(--very-dark-blue);
+    font-weight: 400;
+    order: 2;
+}
+
+.team-builder-img {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.hero-team-builder p {
+    margin-top: 5px;
+}
+
+/* KARMA SECTION */
+.hero-karma {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: left;
+    border-radius: 10px;
+    border-top: 5px solid;
+    border-top-color: var(--orange);
+    box-shadow: 1px 2px 20px var(--grayish-blue);
+    margin: 15px;
+    width: 315px;
+    height: 238px;
+    color: var(--very-dark-blue);
+    font-weight: 400;
+    order: 3;
+}
+
+.karma-img {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.hero-karma p {
+    margin-top: 5px;
+}
+
+/* CALCULATOR SECTION */
+.hero-calculator {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: left;
+    border-radius: 10px;
+    border-top: 5px solid;
+    border-top-color: var(--blue);
+    box-shadow: 1px 2px 20px var(--grayish-blue);
+    margin: 15px;
+    width: 315px;
+    height: 238px;
+    color: var(--very-dark-blue);
+    font-weight: 400;
+    order: 4;
+}
+
+.calculator-img {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.hero-calculator p {
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 1095px) {
+    .change-height {
+        transform: translateY(50%);
+    }
+
+    .hero-calculator {
+        order: 3;
+    }
+
+    .hero-karma {
+        order: 4;
+    }
+}
